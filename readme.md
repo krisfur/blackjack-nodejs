@@ -17,6 +17,7 @@ A simple browser-based Blackjack game built with Node.js and Express.
 - 🧠 Tracks hand values to help learn the game
 - 🔒 Session-based state management
 - ✨ Basic highlighting for new cards drawn
+- ⌨️ Keyboard controls
 
 ## 🚀 How to Run
 
@@ -32,6 +33,10 @@ A simple browser-based Blackjack game built with Node.js and Express.
 3. **Open your browser:**
 
    Visit http://localhost:3000 to start playing.
+4. **Play!**
+
+   Use buttons to play, or press `D` to deal, `H` to hit, or `S` to stand.
+
 
 ## 🛠️ Development notes
 - ⚙️ Backend: Node.js + Express with session support
