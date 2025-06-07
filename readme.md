@@ -18,6 +18,7 @@ A simple browser-based Blackjack game built with Node.js and Express.
 - 🔒 Session-based state management
 - ✨ Basic highlighting for new cards drawn
 - ⌨️ Keyboard controls
+- 👑 Crown emoji to showcase the winner
 
 ## 🚀 How to Run
 
@@ -47,7 +48,6 @@ A simple browser-based Blackjack game built with Node.js and Express.
 
 ## Ideas to add
 - 💰 Add betting and scoring
-- 👑 Make it clearer in the UI who won with some emoji?
 
 ## 📄 License
 MIT License

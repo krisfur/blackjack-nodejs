@@ -78,13 +78,23 @@ function updateUI(data) {
     dealerNewCards = [data.dealerHand[data.dealerHand.length - 1]];
   }
 
+  // Determine winner for crown emoji
+  let playerCrown = '';
+  let dealerCrown = '';
+  const statusLower = data.status.toLowerCase();
+  if (statusLower.includes('player wins')) {
+    playerCrown = '👑 ';
+  } else if (statusLower.includes('dealer wins')) {
+    dealerCrown = '👑 ';
+  }
+
   // Player Hand
-  playerHandDiv.innerHTML = 'Player Hand: ' +
+  playerHandDiv.innerHTML = playerCrown + 'Player Hand: ' +
     renderHand(data.playerHand, playerNewCards) +
     ` (Value: ${data.playerValue})`;
 
   // Dealer Hand
-  dealerHandDiv.innerHTML = 'Dealer Hand: ' +
+  dealerHandDiv.innerHTML = dealerCrown + 'Dealer Hand: ' +
     renderHand(data.dealerHand, dealerNewCards) +
     ` (Value: ${data.dealerValue})`;
 
