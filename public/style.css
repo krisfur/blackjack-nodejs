@@ -21,19 +21,27 @@ h1 {
 }
 
 button {
-  background-color: #89b4fa; /* Blue */
-  color: #1e1e2e;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 20px;
-  margin: 5px;
+  background-color: #a173d0;  /* Darker purpleish shade */
+  color: #cdd6f4;             /* Light text for readability */
+  border: 1px solid #b48ddf;  /* Slightly lighter purple border */
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 5px;
   cursor: pointer;
-  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #b48ddf;  /* Lighter purple on hover */
 }
 
 button:disabled {
-  background-color: #6c7086; /* Overlay 1 */
+  background-color: #585b70;  /* Muted when disabled */
   cursor: not-allowed;
+}
+
+button b {
+  color: #cdd6f4;             /* Keep text bright */
 }
 
 #status {
@@ -62,11 +70,6 @@ span.card {
 .hand.visible {
   opacity: 1;
   transform: translateY(0);
-}
-
-button:hover {
-  background-color: #b4befe; /* Lavender (slightly lighter) */
-  transition: background-color 0.3s;
 }
 
 .hand span.card {

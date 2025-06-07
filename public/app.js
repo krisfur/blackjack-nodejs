@@ -43,6 +43,18 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+document.addEventListener('keydown', (event) => {
+  const key = event.key.toLowerCase();
+
+  if (key === 'd' && !dealButton.disabled) {
+    dealButton.click();
+  } else if (key === 'h' && !hitButton.disabled) {
+    hitButton.click();
+  } else if (key === 's' && !standButton.disabled) {
+    standButton.click();
+  }
+});
+
 function initializeGameUI() {
   statusDiv.textContent = 'Press "Deal" to start!';
   playerHandDiv.textContent = '';

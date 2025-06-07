@@ -42,7 +42,7 @@ A simple browser-based Blackjack game built with Node.js and Express.
 
 ## Ideas to add
 - 💰 Add betting and scoring
-- ⌨️ Add keyboard controls
+- 👑 Make it clearer in the UI who won with some emoji?
 
 ## 📄 License
 MIT License
